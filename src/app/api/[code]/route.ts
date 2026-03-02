@@ -1,18 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getUrl, incrementClicks } from '@/lib/store';
 
-interface RouteParams {
-  params: {
-    code: string;
-  };
-}
-
 export async function GET(
   request: NextRequest,
-  { params }: RouteParams
+  { params }: { params: Promise<{ [key: string]: string }> }
 ): Promise<NextResponse> {
   try {
-    const { code } = params;
+    const { code } = await params;
 
     if (!code || typeof code !== 'string') {
       return NextResponse.json(
