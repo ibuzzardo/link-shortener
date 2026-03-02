@@ -125,3 +125,7 @@ src/
     ├── types.ts               # TypeScript interfaces
     └── utils.ts               # Utility functions
 ```
+
+## License
+
+MIT — see [LICENSE](LICENSE)
