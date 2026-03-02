@@ -1,5 +1,10 @@
 # URL Shortener
 
+> Built with [Dark Factory v4](https://github.com/ibuzzardo/dark-factory-v4) — autonomous AI software development pipeline
+
+**[Live Demo](https://link-shortener-six-orpin.vercel.app)**
+
+
 A URL shortener API with analytics dashboard built with Next.js 15, TypeScript, and Tailwind CSS.
 
 ## Features
